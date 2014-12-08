@@ -1,0 +1,299 @@
+/**
+ * Elyse theme!
+ * Author: Elyse Holladay
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+@import "fonts.css";
+// ---------------------------------------------
+
+
+
+$white: #fff;
+$backgroundColor: #fff;
+
+
+
+// Primary/body text
+$mainFont: 'PlutoSansExtraLight', sans-serif;
+$mainFontSize: 36px;
+$mainColor: $white;
+
+// Headings
+$headingFont: 'pluto_sanscond_regular', 'PlutoSansRegular', Impact, sans-serif;
+$headingColor: $white;
+$headingLineHeight: 1.25em;
+$headingLetterSpacing: 0;
+$headingTextTransform: none;
+// $headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$headingTextShadow: none;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: #444;
+$linkColorHover: #eee;
+
+// Text selection
+$selectionBackgroundColor: #993399;
+$selectionColor: #fff;
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+// Colors
+
+$fuschia: #8b243e;
+$purple: #904098;
+$turquoise: #3b8aa2;
+$blue: #0f59b4;
+$orange: #f19732;
+$green: #5b8138;
+$black: #000;
+$white: #fff;
+
+
+.fuschia .reveal * { color: $fuschia; }
+.purple .reveal * { color: $purple; }
+.turquoise .reveal * { color: $turquoise; }
+.blue .reveal * { color: $blue; }
+.orange .reveal * { color: $orange; }
+.green .reveal * { color: $green; }
+.black .reveal * { color: $black; }
+.white .reveal * { color: $white; }
+
+.reveal h1 {text-transform: uppercase;}
+
+.reveal h6 {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.reveal h4 {
+    font-family: "adelle-1", "adelle";
+}
+
+.no-idea-dog body {
+    background: $white url('../../images/no-idea-dog-title.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.elyse-card body {
+    background: $white url('../../images/elyse-card.jpg') no-repeat top left;
+    background-size: auto 100%;
+
+    h3 {margin-top: 0; color: #000;}
+}
+
+.elyse-teaching body {
+    background: $white url('../../images/elyse-teaching.jpg') no-repeat center 50%;
+    background-size: 100%;
+}
+
+.gdi body {
+    background: #fe5a62 url('../../images/gdi.jpg') no-repeat center center;
+}
+
+.twitter-panic body {
+    background: $white url('../../images/twitter-panic.jpg') no-repeat center center;
+}
+
+.strawberry body {
+    background: $white url('../../images/strawberry.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+.smartdisplay body {
+    background: $white url('../../images/smartdisplay.png') no-repeat center center;;
+}
+
+.tiger-snarl body {
+    background: $white url('../../images/tiger-snarl.gif') no-repeat center center;
+    background-size: cover;
+}
+
+.tiger-watching body{
+    background: $white url('../../images/tiger-watching.gif') no-repeat center center;
+    background-size: cover;
+    h2 {color: $white;}
+}
+
+.laura-handstand body{
+    background: $white url('../../images/laura-handstand.jpg') no-repeat center bottom;
+    background-size: cover;
+}
+
+.standing-splits body{
+    background: $white url('../../images/standing-splits.jpg') no-repeat center bottom;
+    background-size: 45%;
+}
+
+.baby-seal-surfboard-derp body{
+    background: $white url('../../images/baby-seal-surfboard-derp.gif') no-repeat center center;
+    background-size: cover;
+}
+
+.computer-do-a-thing body {
+    background: #e2eef5 url('../../images/computer-do-a-thing.jpg') no-repeat center center;
+}
+
+
+.shit-you-know-chart body {
+    background: $white url('../../images/shit-you-know-chart.jpg') no-repeat center center;
+}
+
+.pedant-tweet body {
+    background: #e2eef5 url('../../images/pedant-tweet.jpg') no-repeat center center;
+}
+
+.russian-baby-on-ice body {
+    background: $white url('../../images/russian-baby-on-ice.gif') no-repeat center center;
+    background-size: cover;
+}
+
+.owl-derp-eyes body {
+    background: $white url('../../images/owl-derp-eyes.gif') no-repeat top center;
+    background-size: auto 100%;
+}
+
+
+.kitten-pushups body {
+    background: $white url('../../images/kitten-pushup-coach.gif') no-repeat center center;
+    background-size: cover;
+}
+
+
+.dog-searching body {
+    background: $white url('../../images/dog-searching.gif') no-repeat center center;
+    background-size: cover;
+}
+
+
+.ocean-afloat body {
+    background: $white url('../../images/ocean-afloat.gif') no-repeat center center;
+    background-size: cover;
+}
+
+.programmer-levels body {
+    background: #e2eef5 url('../../images/programmer-levels.jpg') no-repeat center center;
+}
+
+
+.say-yes body {
+    background: $white url('../../images/say-yes.jpg') no-repeat center center;
+    background-size: 80% auto;
+}
+
+.tiger-scared-by-bird body {
+    background: $white url('../../images/tiger-scared-by-bird.gif') no-repeat center center;
+    background-size: cover;
+}
+
+
+.my-first-talk body {
+    background: $white url('../../images/my-first-talk.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+.calvin-hobbes body {
+    background: $white url('../../images/calvin-hobbes.jpg') no-repeat center center;
+    background-size: 80%;
+}
+
+.washer-cant body {
+    background: $white url('../../images/washer-cant.gif') no-repeat center center;
+    background-size: auto 100%;
+}
+
+.whack-a-kitty body {
+    background: $white url('../../images/whack-a-kitty-boop.gif') no-repeat center center;
+    background-size: cover;
+}
+
+
+.liz-lemon-self-five body {
+    background: $white url('../../images/liz-lemon-self-five.gif') no-repeat center 20%;
+    background-size: cover;
+}
+
+.banana-kid body {
+    background: $white url('../../images/banana-kid.gif') no-repeat center center;
+    background-size: cover;
+}
+
+
+.fu-weekend body {
+    background: $white url('../../images/fu-weekend.jpg') no-repeat center center;
+    background-size: auto 100%;
+}
+
+
+.atxnerdyladies body {
+    background: radial-gradient(20em circle at center center, #993399, #651b63);
+    text-align: center;
+}
+
+.adventure-time-sparkle body {
+    background: $white url('../../images/adventure-time-sparkle.gif') no-repeat center center;
+    background-size: cover;
+}
+
+.tiger-breathing body {
+    background: $white url('../../images/tiger-breathing.gif') no-repeat center center;
+    background-size: cover;
+}
+
+
+// TITLES
+
+.title-slide body {
+    background: $white url('../../images/title-slide.jpg') no-repeat center center;
+    background-size: 40%;
+}
+
+.title-be-lucky body {
+    background: $white url('../../images/title-be-lucky.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.title-set-goals body {
+    background: $white url('../../images/title-set-goals.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.title-work-joyously body {
+    background: $white url('../../images/title-work-joyously.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.title-share-your-doubts body {
+    background: $white url('../../images/title-share-your-doubts.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.title-celebrate-your-wins body {
+    background: $white url('../../images/title-celebrate-your-wins.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.title-help-others body {
+    background: $white url('../../images/title-help-others.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.title-overview body {
+    background: $white url('../../images/title-overview.jpg') no-repeat center center;
+    background-size: 90%;
+}
+.typekit-badge {display: none !important;}
