@@ -30,7 +30,7 @@ body {
   color: #657b83; }
 
 ::selection {
-  color: white;
+  color: #fff;
   background: #d33682;
   text-shadow: none; }
 
@@ -132,3 +132,5 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #268bd2; }
+
+/*# sourceMappingURL=solarized.css.map */

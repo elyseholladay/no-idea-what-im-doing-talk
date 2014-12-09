@@ -3,22 +3,49 @@
  * Author: Elyse Holladay
  */
 @import url(fonts.css);
+.fuchsia body {
+  background-color: #b42e50; }
+
+.purple body {
+  background-color: #904098; }
+
+.turquoise body {
+  background-color: #3b8aa2; }
+
+.blue body {
+  background-color: #0f59b4; }
+
+.orange body {
+  background-color: #f19732; }
+
+.green body {
+  background-color: #79ab3d; }
+
+.black body {
+  color: #000; }
+
+.black-bg body {
+  background-color: #000; }
+
+.white body {
+  background-color: #fff; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: white;
-  background-color: white; }
+  background: #2b2b2b;
+  background-color: #2b2b2b; }
 
 .reveal {
-  font-family: "PlutoSansExtraLight", sans-serif;
+  font-family: "PlutoSansCondExtraLight", sans-serif;
   font-size: 36px;
   font-weight: normal;
-  color: white; }
+  color: #fff; }
 
 ::selection {
-  color: white;
-  background: #993399;
+  color: #fff;
+  background: #904098;
   text-shadow: none; }
 
 /*********************************************
@@ -31,8 +58,8 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: white;
-  font-family: "pluto_sanscond_regular", "PlutoSansRegular", Impact, sans-serif;
+  color: #fff;
+  font-family: "PlutoSansCondLight", "pluto_sanscond_regular", "PlutoSansRegular", Impact, sans-serif;
   line-height: 1.25em;
   letter-spacing: 0;
   text-transform: none;
@@ -45,7 +72,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #444444;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -54,13 +81,13 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #eeeeee;
+  color: #4c2250;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #1e1e1e; }
+  background: #d9d9d9; }
 
 /*********************************************
  * IMAGES
@@ -74,31 +101,31 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #444444; }
+  border-right-color: #fff; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #444444; }
+  border-left-color: #fff; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #444444; }
+  border-bottom-color: #fff; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #444444; }
+  border-top-color: #fff; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #eeeeee; }
+  border-right-color: #4c2250; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #eeeeee; }
+  border-left-color: #4c2250; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #eeeeee; }
+  border-bottom-color: #4c2250; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #eeeeee; }
+  border-top-color: #4c2250; }
 
 /*********************************************
  * PROGRESS BAR
@@ -107,7 +134,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #444444;
+  background: #fff;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -118,161 +145,146 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #444444; }
+  color: #fff; }
 
-.fuschia .reveal * {
-  color: #8b243e; }
-
-.purple .reveal * {
-  color: #904098; }
-
-.turquoise .reveal * {
-  color: #3b8aa2; }
-
-.blue .reveal * {
-  color: #0f59b4; }
-
-.orange .reveal * {
-  color: #f19732; }
-
-.green .reveal * {
-  color: #5b8138; }
-
-.black .reveal * {
-  color: black; }
-
-.white .reveal * {
-  color: white; }
-
-.reveal h1 {
-  text-transform: uppercase; }
+body {
+  background: #222; }
 
 .reveal h6 {
-  color: #ddd;
+  color: rgba(255, 255, 255, 0.75);
   font-size: 18px;
   line-height: 18px;
   margin-bottom: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "PlutoSansRegular"; }
 
 .reveal h4 {
-  font-family: "adelle-1", "adelle"; }
+  font-family: "adelle-1", "adelle";
+  font-weight: normal;
+  line-height: 1.75; }
 
 .no-idea-dog body {
-  background: white url("../../images/no-idea-dog-title.jpg") no-repeat center center;
+  background: #fff url("../../images/no-idea-dog-title.jpg") no-repeat center center;
   background-size: cover; }
 
 .elyse-card body {
-  background: white url("../../images/elyse-card.jpg") no-repeat top left;
+  background: #fff url("../../images/elyse-card.jpg") no-repeat top left;
   background-size: auto 100%; }
   .elyse-card body h3 {
     margin-top: 0;
     color: #000; }
 
 .elyse-teaching body {
-  background: white url("../../images/elyse-teaching.jpg") no-repeat center 50%;
+  background: #fff url("../../images/elyse-teaching.jpg") no-repeat center 50%;
   background-size: 100%; }
 
 .gdi body {
   background: #fe5a62 url("../../images/gdi.jpg") no-repeat center center; }
 
 .twitter-panic body {
-  background: white url("../../images/twitter-panic.jpg") no-repeat center center; }
+  background: #fff url("../../images/twitter-panic.jpg") no-repeat center center; }
 
 .strawberry body {
-  background: white url("../../images/strawberry.jpg") no-repeat center center;
+  background: #fff url("../../images/strawberry.jpg") no-repeat center center;
   background-size: cover; }
 
 .smartdisplay body {
-  background: white url("../../images/smartdisplay.png") no-repeat center center; }
+  background: #fff url("../../images/smartdisplay.png") no-repeat center center; }
 
 .tiger-snarl body {
-  background: white url("../../images/tiger-snarl.gif") no-repeat center center;
+  background: #fff url("../../images/tiger-snarl.gif") no-repeat center center;
   background-size: cover; }
 
 .tiger-watching body {
-  background: white url("../../images/tiger-watching.gif") no-repeat center center;
+  background: #fff url("../../images/tiger-bg.jpg") no-repeat center center;
   background-size: cover; }
-  .tiger-watching body h2 {
-    color: white; }
+  .tiger-watching body h3 {
+    color: #fff;
+    font-weight: normal;
+    margin-top: -175px; }
 
 .laura-handstand body {
-  background: white url("../../images/laura-handstand.jpg") no-repeat center bottom;
+  background: #fff url("../../images/laura-handstand.jpg") no-repeat center bottom;
   background-size: cover; }
 
 .standing-splits body {
-  background: white url("../../images/standing-splits.jpg") no-repeat center bottom;
+  background: #fff url("../../images/standing-splits.jpg") no-repeat center bottom;
   background-size: 45%; }
 
 .baby-seal-surfboard-derp body {
-  background: white url("../../images/baby-seal-surfboard-derp.gif") no-repeat center center;
+  background: #fff url("../../images/baby-seal-surfboard-derp.gif") no-repeat center center;
   background-size: cover; }
 
 .computer-do-a-thing body {
   background: #e2eef5 url("../../images/computer-do-a-thing.jpg") no-repeat center center; }
 
 .shit-you-know-chart body {
-  background: white url("../../images/shit-you-know-chart.jpg") no-repeat center center; }
+  background: #fff url("../../images/shit-you-know-chart.jpg") no-repeat center center; }
 
 .pedant-tweet body {
   background: #e2eef5 url("../../images/pedant-tweet.jpg") no-repeat center center; }
 
 .russian-baby-on-ice body {
-  background: white url("../../images/russian-baby-on-ice.gif") no-repeat center center;
+  background: #fff url("../../images/russian-baby-on-ice.gif") no-repeat center center;
   background-size: cover; }
 
 .owl-derp-eyes body {
-  background: white url("../../images/owl-derp-eyes.gif") no-repeat top center;
+  background: #fff url("../../images/owl-derp-eyes.gif") no-repeat top center;
   background-size: auto 100%; }
 
 .kitten-pushups body {
-  background: white url("../../images/kitten-pushup-coach.gif") no-repeat center center;
+  background: #fff url("../../images/kitten-pushup-coach.gif") no-repeat center center;
   background-size: cover; }
 
 .dog-searching body {
-  background: white url("../../images/dog-searching.gif") no-repeat center center;
+  background: #fff url("../../images/dog-searching.gif") no-repeat center center;
   background-size: cover; }
 
 .ocean-afloat body {
-  background: white url("../../images/ocean-afloat.gif") no-repeat center center;
+  background: #fff url("../../images/ocean-afloat.gif") no-repeat center center;
   background-size: cover; }
 
 .programmer-levels body {
   background: #e2eef5 url("../../images/programmer-levels.jpg") no-repeat center center; }
 
+.strawberries body {
+  background: #fff url("../../images/strawberries.jpg") no-repeat center center;
+  background-size: cover; }
+
 .say-yes body {
-  background: white url("../../images/say-yes.jpg") no-repeat center center;
+  background: #fff url("../../images/say-yes.jpg") no-repeat center center;
   background-size: 80% auto; }
 
 .tiger-scared-by-bird body {
-  background: white url("../../images/tiger-scared-by-bird.gif") no-repeat center center;
+  background: #fff url("../../images/tiger-scared-by-bird.gif") no-repeat center center;
   background-size: cover; }
 
 .my-first-talk body {
-  background: white url("../../images/my-first-talk.jpg") no-repeat center center;
+  background: #fff url("../../images/my-first-talk.jpg") no-repeat center center;
   background-size: cover; }
 
 .calvin-hobbes body {
-  background: white url("../../images/calvin-hobbes.jpg") no-repeat center center;
+  background: #fff url("../../images/calvin-hobbes.jpg") no-repeat center center;
   background-size: 80%; }
 
 .washer-cant body {
-  background: white url("../../images/washer-cant.gif") no-repeat center center;
+  background: #fff url("../../images/washer-cant.gif") no-repeat center center;
   background-size: auto 100%; }
 
 .whack-a-kitty body {
-  background: white url("../../images/whack-a-kitty-boop.gif") no-repeat center center;
+  background: #fff url("../../images/whack-a-kitty-boop.gif") no-repeat center center;
   background-size: cover; }
 
 .liz-lemon-self-five body {
-  background: white url("../../images/liz-lemon-self-five.gif") no-repeat center 20%;
+  background: #fff url("../../images/liz-lemon-self-five.gif") no-repeat center 20%;
   background-size: cover; }
 
 .banana-kid body {
-  background: white url("../../images/banana-kid.gif") no-repeat center center;
+  background: #fff url("../../images/banana-kid.gif") no-repeat center center;
   background-size: cover; }
 
 .fu-weekend body {
-  background: white url("../../images/fu-weekend.jpg") no-repeat center center;
+  background: #fff url("../../images/fu-weekend.jpg") no-repeat center center;
   background-size: auto 100%; }
 
 .atxnerdyladies body {
@@ -280,44 +292,46 @@ body {
   text-align: center; }
 
 .adventure-time-sparkle body {
-  background: white url("../../images/adventure-time-sparkle.gif") no-repeat center center;
+  background: #fff url("../../images/adventure-time-sparkle.gif") no-repeat center center;
   background-size: cover; }
 
 .tiger-breathing body {
-  background: white url("../../images/tiger-breathing.gif") no-repeat center center;
+  background: #fff url("../../images/tiger-breathing.gif") no-repeat center center;
   background-size: cover; }
 
 .title-slide body {
-  background: white url("../../images/title-slide.jpg") no-repeat center center;
+  background: #fff url("../../images/title-slide.jpg") no-repeat center center;
   background-size: 40%; }
 
 .title-be-lucky body {
-  background: white url("../../images/title-be-lucky.jpg") no-repeat center center;
+  background: #fff url("../../images/title-be-lucky.jpg") no-repeat center center;
   background-size: cover; }
 
 .title-set-goals body {
-  background: white url("../../images/title-set-goals.jpg") no-repeat center center;
+  background: #fff url("../../images/title-set-goals.jpg") no-repeat center center;
   background-size: cover; }
 
 .title-work-joyously body {
-  background: white url("../../images/title-work-joyously.jpg") no-repeat center center;
+  background: #fff url("../../images/title-work-joyously.jpg") no-repeat center center;
   background-size: cover; }
 
 .title-share-your-doubts body {
-  background: white url("../../images/title-share-your-doubts.jpg") no-repeat center center;
+  background: #fff url("../../images/title-share-your-doubts.jpg") no-repeat center center;
   background-size: cover; }
 
 .title-celebrate-your-wins body {
-  background: white url("../../images/title-celebrate-your-wins.jpg") no-repeat center center;
+  background: #fff url("../../images/title-celebrate-your-wins.jpg") no-repeat center center;
   background-size: cover; }
 
 .title-help-others body {
-  background: white url("../../images/title-help-others.jpg") no-repeat center center;
+  background: #fff url("../../images/title-help-others.jpg") no-repeat center center;
   background-size: cover; }
 
 .title-overview body {
-  background: white url("../../images/title-overview.jpg") no-repeat center center;
+  background: #fff url("../../images/title-overview.jpg") no-repeat center center;
   background-size: 90%; }
 
 .typekit-badge {
   display: none !important; }
+
+/*# sourceMappingURL=elyse.css.map */

@@ -12,18 +12,37 @@
 
 
 
-$white: #fff;
-$backgroundColor: #fff;
 
+// Colors
+
+$fuchsia: lighten(#8b243e,10%);
+$purple: #904098;
+$turquoise: #3b8aa2;
+$blue: #0f59b4;
+$orange: #f19732;
+$green: rgb(121,171,61);
+$black: #000;
+$white: #fff;
+
+
+.fuchsia body { background-color: $fuchsia; }
+.purple body { background-color: $purple; }
+.turquoise body { background-color: $turquoise; }
+.blue body { background-color: $blue; }
+.orange body { background-color: $orange; }
+.green body { background-color: $green; }
+.black body { color: $black; }
+.black-bg body { background-color: $black; }
+.white body { background-color: $white; }
 
 
 // Primary/body text
-$mainFont: 'PlutoSansExtraLight', sans-serif;
+$mainFont: 'PlutoSansCondExtraLight', sans-serif;
 $mainFontSize: 36px;
 $mainColor: $white;
 
 // Headings
-$headingFont: 'pluto_sanscond_regular', 'PlutoSansRegular', Impact, sans-serif;
+$headingFont: "PlutoSansCondLight", 'pluto_sanscond_regular', 'PlutoSansRegular', Impact, sans-serif;
 $headingColor: $white;
 $headingLineHeight: 1.25em;
 $headingLetterSpacing: 0;
@@ -33,12 +52,12 @@ $headingTextShadow: none;
 $heading1TextShadow: $headingTextShadow;
 
 // Links and actions
-$linkColor: #444;
-$linkColorHover: #eee;
+$linkColor: $white;
+$linkColorHover: darken($purple,20%);
 
 // Text selection
-$selectionBackgroundColor: #993399;
-$selectionColor: #fff;
+$selectionBackgroundColor: $purple;
+$selectionColor: $white;
 
 
 
@@ -46,40 +65,21 @@ $selectionColor: #fff;
 @import "../template/theme";
 // ---------------------------------------------
 
-
-// Colors
-
-$fuschia: #8b243e;
-$purple: #904098;
-$turquoise: #3b8aa2;
-$blue: #0f59b4;
-$orange: #f19732;
-$green: #5b8138;
-$black: #000;
-$white: #fff;
-
-
-.fuschia .reveal * { color: $fuschia; }
-.purple .reveal * { color: $purple; }
-.turquoise .reveal * { color: $turquoise; }
-.blue .reveal * { color: $blue; }
-.orange .reveal * { color: $orange; }
-.green .reveal * { color: $green; }
-.black .reveal * { color: $black; }
-.white .reveal * { color: $white; }
-
-.reveal h1 {text-transform: uppercase;}
+body {background:#222;}
 
 .reveal h6 {
-    color: #ddd;
+    color: transparentize($white,.25);
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 0;
     text-transform: uppercase;
+    font-family: "PlutoSansRegular";
 }
 
 .reveal h4 {
     font-family: "adelle-1", "adelle";
+    font-weight: normal;
+    line-height: 1.75;
 }
 
 .no-idea-dog body {
@@ -123,9 +123,10 @@ $white: #fff;
 }
 
 .tiger-watching body{
-    background: $white url('../../images/tiger-watching.gif') no-repeat center center;
+    // background: $white url('../../images/tiger-watching.gif') no-repeat center center;
+    background: $white url('../../images/tiger-bg.jpg') no-repeat center center;
     background-size: cover;
-    h2 {color: $white;}
+    h3 {color: $white; font-weight: normal; margin-top: -175px;}
 }
 
 .laura-handstand body{
@@ -188,6 +189,10 @@ $white: #fff;
     background: #e2eef5 url('../../images/programmer-levels.jpg') no-repeat center center;
 }
 
+.strawberries body {
+    background: $white url('../../images/strawberries.jpg') no-repeat center center;
+    background-size: cover;
+}
 
 .say-yes body {
     background: $white url('../../images/say-yes.jpg') no-repeat center center;
