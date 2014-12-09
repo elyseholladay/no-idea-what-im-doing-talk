@@ -25,15 +25,30 @@ $black: #000;
 $white: #fff;
 
 
-.fuchsia body { background-color: $fuchsia; }
-.purple body { background-color: $purple; }
-.turquoise body { background-color: $turquoise; }
-.blue body { background-color: $blue; }
-.orange body { background-color: $orange; }
-.green body { background-color: $green; }
-.black body { color: $black; }
-.black-bg body { background-color: $black; }
-.white body { background-color: $white; }
+.fuchsia body {
+    background-image: radial-gradient(ellipse at center, $fuchsia 60%, rgba(0, 0, 0, 0.1) 180%);
+}
+.purple body {
+    background-image: radial-gradient(ellipse at center, $purple 60%, rgba(0, 0, 0, 0.1) 180%);
+}
+.turquoise body {
+    background-image: radial-gradient(ellipse at center, $turquoise 60%, rgba(0, 0, 0, 0.1) 180%);
+}
+.blue body {
+    background-image: radial-gradient(ellipse at center, $blue 60%, rgba(0, 0, 0, 0.1) 180%);
+}
+.orange body {
+    background-image: radial-gradient(ellipse at center, $orange 100%, rgba(0, 0, 0, 0.1) 250%);
+}
+.green body {
+    background-image: radial-gradient(ellipse at center, $green 60%, rgba(0, 0, 0, 0.1) 180%);
+}
+.black-bg body {
+    background-image: radial-gradient(ellipse at center, $black 60%, rgba(0, 0, 0, 0.1) 180%);
+}
+.white body {
+    background: $white;
+}
 
 
 // Primary/body text
@@ -65,7 +80,10 @@ $selectionColor: $white;
 @import "../template/theme";
 // ---------------------------------------------
 
-body {background:#222;}
+body {
+    background: #222;
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .25) 100%);
+}
 
 .reveal h6 {
     color: transparentize($white,.25);
@@ -231,8 +249,8 @@ body {background:#222;}
 }
 
 .fake-it body {
-    background: rgb(211, 199, 189) url('../../images/fake-it-bg.jpg') no-repeat center center;
-    background-size: 70%;
+    background: rgb(211, 199, 189) url('../../images/fake-it-til-you-make-it.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 .washer-cant body {
