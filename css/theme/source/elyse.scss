@@ -37,12 +37,12 @@ $white: #fff;
 
 
 // Primary/body text
-$mainFont: 'PlutoSansCondExtraLight', sans-serif;
+$mainFont: 'PlutoSansCondLight', sans-serif;
 $mainFontSize: 36px;
 $mainColor: $white;
 
 // Headings
-$headingFont: "PlutoSansCondLight", 'pluto_sanscond_regular', 'PlutoSansRegular', Impact, sans-serif;
+$headingFont: "PlutoSansCondRegular", "PlutoSansCondLight", 'pluto_sanscond_regular', 'PlutoSansRegular', Impact, sans-serif;
 $headingColor: $white;
 $headingLineHeight: 1.25em;
 $headingLetterSpacing: 0;
@@ -77,7 +77,7 @@ body {background:#222;}
 }
 
 .reveal h4 {
-    font-family: "adelle-1", "adelle";
+    font-family: $mainFont;
     font-weight: normal;
     line-height: 1.75;
 }
@@ -204,6 +204,15 @@ body {background:#222;}
     background-size: cover;
 }
 
+.action-foundation body {
+    background: $black url('../../images/action-foundation-success.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.inspiration body {
+    background: $black url('../../images/inspiration-exists-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
 
 .my-first-talk body {
     background: $white url('../../images/my-first-talk.jpg') no-repeat center center;
@@ -214,6 +223,16 @@ body {background:#222;}
 .calvin-hobbes body {
     background: $white url('../../images/calvin-hobbes.jpg') no-repeat center center;
     background-size: 80%;
+}
+
+.never-say-anything body {
+    background: $white url('../../images/never-say-anything-bg.jpg') no-repeat center center;
+    background-size: 150%;
+}
+
+.fake-it body {
+    background: rgb(211, 199, 189) url('../../images/fake-it-bg.jpg') no-repeat center center;
+    background-size: 70%;
 }
 
 .washer-cant body {
